@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>{{config('app.name')}}</title>
+    
+    <link rel="shortcut icon" href="{{asset('icon/icon-hitam.png')}}" type="image/x-icon">
     <link rel="stylesheet" href="{{ asset('UI/assets/bootstrap/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('UI/assets/css/swiper-icons.css') }}">
     <link rel="stylesheet" href="{{ asset('UI/assets/fonts/fontawesome-all.min.css') }}">
@@ -22,7 +24,7 @@
     <nav class="navbar  navbar-expand-md mb-4 fixed-top bg-body py-3"
         style="position: fixed;display: flex;width: 100%;">
         <div class="container"><a class="navbar-brand d-flex align-items-center"
-                href="#"><span>MasaKuy</span></a><button data-bs-toggle="collapse" class="navbar-toggler"
+                href="{{url('/')}}"><span>MasaKuy</span></a><button data-bs-toggle="collapse" class="navbar-toggler"
                 data-bs-target="#navcol-3"><span class="visually-hidden">Toggle navigation</span><span
                     class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navcol-3">

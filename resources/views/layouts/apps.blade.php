@@ -10,7 +10,7 @@
     <meta name="author" content="">
 
     <title> {{ config('app.name') }}</title>
-
+<link rel="shortcut icon" href="{{asset('icon/icon-hitam.png')}}" type="image/x-icon">
     <!-- Custom fonts for this template -->
     <link href="{{ asset('ADMIN/vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
     <link
@@ -38,9 +38,9 @@
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
             <!-- Sidebar - Brand -->
-            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <i class="fas fa-laugh-wink"></i>
+            <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{'/'}}">
+                <div class="sidebar-brand-icon ">
+                    <img src="{{asset('icon/icon-putih.png')}}" style="height: 50px; width:50px;" alt="">
                 </div>
                 <div class="sidebar-brand-text mx-3">{{config('app.name')}}</sup></div>
             </a>
@@ -68,7 +68,7 @@
 
 
             <!-- Nav Item - Tables -->
-            @if (Auth::user()->role == 'admin')
+            @if (Auth::check() &&Auth::user()->role == 'admin')
                 <li class="nav-item active">
                     <a class="nav-link" href="{{ url('admin/users') }}">
                         <i class="fas fa-fw fa-user"></i>
@@ -129,7 +129,7 @@
                             <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 <span
-                                    class="mr-2 d-none d-lg-inline text-gray-600 small">{{ Auth::user()->name }}</span>
+                                    class="mr-2 d-none d-lg-inline text-gray-600 small">{{Auth::check() && Auth::user()->name }}</span>
 
                             </a>
 

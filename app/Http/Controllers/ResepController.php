@@ -13,8 +13,13 @@ class ResepController extends Controller
     // Menampilkan semua resep
     public function index()
     {
-        $reseps = Resep::all();
-        return view('resep.index', ['reseps' => $reseps]);
+        if (Auth::user()->role == 'admin') {
+            $reseps = Resep::all();
+            return view('resep.index', ['reseps' => $reseps]);
+        }else{
+            $reseps = Resep::where('id_user', Auth::id())->get();
+            return view('resep.index', ['reseps' => $reseps]);
+        }
     }
 
     // Menampilkan formulir untuk membuat resep baru

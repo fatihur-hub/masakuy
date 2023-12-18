@@ -36,8 +36,8 @@
     <div class="container py-4 py-xl-5">
         <div class="row mb-5">
             <div class="col-md-8 col-xl-6 text-center mx-auto">
-                <h2>Jelajahi Cita Rasa Nusantara</h2>
-                <p class="w-lg-50">Berbagai resep masakan nusantara yang bisa kamu coba</p>
+                <h2>Artikel Masakan</h2>
+                <p class="w-lg-50">artikel seputar masakan</p>
             </div>
         </div><!-- Start: Search Input Responsive with Icon -->
       

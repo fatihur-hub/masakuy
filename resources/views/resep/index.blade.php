@@ -31,7 +31,6 @@
                             <tbody>
                                 @foreach ($reseps as $resep)
                                     <tr>
-                                        <td>{{ $resep->id }}</td>
                                         <td> <img class="img-thumbnail" style="height: 100px; width: 100px;"
                                                 src="{{ asset('storage/gambar/' . $resep->gambar) }}" alt="">
                                         </td>

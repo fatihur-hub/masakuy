@@ -12,9 +12,13 @@ class ArtikelController extends Controller
 {
     public function index()
     {
-        $user = User::all();
-        $artikel = Artikel::all();
-        return view('artikel.index', compact('artikel', 'user'));
+        if (Auth::user()->role == 'admin') {
+            $artikel = Artikel::all();
+            return view('artikel.index', ['artikel' => $artikel]);  
+        }else{  
+            $artikel = Artikel::where('author', Auth::id())->get();
+            return view('artikel.index', ['artikel' => $artikel]);
+        }
     }
 
     public function create()

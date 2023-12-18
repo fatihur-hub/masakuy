@@ -36,50 +36,7 @@
         </div>
     </div>
 </div><!-- Start: Testimonials -->
-<div class="container py-4 py-xl-5">
-    <div class="row mb-5">
-        <div class="col-md-8 col-xl-6 text-center mx-auto">
-            <h2>Apa Kata Mereka?</h2>
-        </div>
-    </div>
-    <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-lg-3">
-        <div class="col">
-            <div>
-                <p class="bg-body-tertiary border rounded border-0 p-4">Nisi sit justo faucibus nec ornare amet, tortor torquent. Blandit class dapibus, aliquet morbi.</p>
-                <div class="d-flex align-items-md-center"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
-                    <div>
-                        <p class="fw-bold text-primary mb-0">John Smith</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div>
-                <p class="bg-body-tertiary border rounded border-0 p-4">Nisi sit justo faucibus nec ornare amet, tortor torquent. Blandit class dapibus, aliquet morbi.</p>
-                <div class="d-flex align-items-md-center"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
-                    <div>
-                        <p class="fw-bold text-primary mb-0">John Smith</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div>
-                <p class="bg-body-tertiary border rounded border-0 p-4">Nisi sit justo faucibus nec ornare amet, tortor torquent. Blandit class dapibus, aliquet morbi.</p>
-                <div class="d-flex align-items-md-center"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="https://cdn.bootstrapstudio.io/placeholders/1400x800.png">
-                    <div>
-                        <p class="fw-bold text-primary mb-0">John Smith</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div><!-- End: Testimonials -->
 <div class="container">
-    <div class="card">
-        <div class="card-body">
-            <h4 class="card-title">Komentari</h4><textarea style="width: 100%;"></textarea><input class="btn btn-primary" type="submit">
-        </div>
-    </div>
+   
 </div><!-- Start: Footer Basic -->
 @endsection
